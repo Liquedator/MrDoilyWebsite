@@ -1,7 +1,9 @@
 .indexButton {
     position: absolute;
     width: 25vw;
-    height: auto;
+    max-width: 25vw;
+    height: 25vw;
+    max-height: 25vw;
 }
 
 #dylan {
@@ -28,7 +30,7 @@
     position: fixed;
     width: 40vw;
     max-width: 40vw;
-    height: auto;
+    height: 40vw;
     max-height: 40vw;
     left: 30vw;
     top: 15vh;
