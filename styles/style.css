@@ -35,7 +35,7 @@
 
 #comingSoon {
     position: fixed;
-    width: clamp(10vmin, 20vmax, 20vmax);
+    width: clamp(30vmin, 40vmax, 40vmax);
     height: auto;
     left: 50%;
     top: 50%;
@@ -46,6 +46,6 @@
     top: 0;
     left: 0;
     position: absolute;
-    width: 2vw;
+    width: 10vw;
     height: auto;
 }
