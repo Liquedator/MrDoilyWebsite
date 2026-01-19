@@ -17,7 +17,11 @@
             <img src="img/kieran.png"  class="indexButton" alt="Kieran's Doily" id="kieran">
         </div>
         <div>
-            <a href="pages/comingSoon.html"><img src="img/buttons/mrdoily.png" alt="Mr. Doily Button" id="centerButton"></a>
+            <a href="pages/comingSoon.html">
+                <img src="img/buttons/mrdoily.png" alt="Mr. Doily Button" id="centerButton"
+                onmouseenter="this.src='img/buttons/mrdoily-pressed.png'; this.style.transform='translate(-50%,-50%) rotate(-1deg) scale(1.05)';"
+                onmouseleave="this.src='img/buttons/mrdoily.png'; this.style.transform='translate(-50%,-50%) rotate(0deg) scale(1)';">
+            </a>
         </div>
     </body>
 </html>
