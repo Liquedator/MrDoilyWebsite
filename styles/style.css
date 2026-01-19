@@ -1,12 +1,7 @@
-.indexPage {
-    outline: 3px solid red;
-}
-
 .indexButton {
     position: absolute;
-    width: 30%;
+    width: 25vw;
     height: auto;
-    outline: 2px solid blue;
 }
 
 #dylan {
@@ -27,4 +22,14 @@
 #kieran {
     bottom: 0;
     right: 0;
+}
+
+#mrdoilybutton {
+    width: 50vw;
+    max-width: 50vw;
+    height: auto;
+    max-height: 50vw;
+    position: fixed;
+    left: 50vw;
+    top: 50vw;
 }
