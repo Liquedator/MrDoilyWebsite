@@ -1,3 +1,4 @@
+/*index.html*/
 .indexFaces {
     position: absolute;
     width: clamp(20vmin, 25vmax, 25vmax);
@@ -32,7 +33,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 30px;
     text-align: center;
 }
 
@@ -48,6 +49,7 @@
     font-size: 150%;
 }
 
+/*comingsoon.html*/
 #comingSoon {
     position: fixed;
     width: clamp(30vmin, 40vmax, 50vmax);
@@ -57,7 +59,7 @@
     transform: translate(-50%, -50%);
 }
 
-
+/*go back button*/
 .goBackControl {
     position: absolute;
     top: 0;
@@ -74,9 +76,13 @@
     position: static;
     width: clamp(10vmin, 10vmax, 20vmax);
     height: auto;
+    transition: transform 180ms ease;
+    transform: rotate(0deg) scale(1);   
 }
 
-#goBackText {
-    font-size: 150%;
+.goBackText {
+    font-size: 125%;
     color: black;
 }
+
+/*homepage.html*/
