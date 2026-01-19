@@ -1,4 +1,4 @@
-.indexButton {
+.indexFaces {
     position: absolute;
     width: clamp(20vmin, 25vmax, 25vmax);
     height: auto;
@@ -24,13 +24,28 @@
     right: 0;
 }
 
-#centerButton {
+.centerUnit {
     position: fixed;
-    width: clamp(30vmin, 40vmax, 40vmax);
-    height: auto;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -55%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
+
+#centerButton {
+    width: clamp(30vmin, 40vmax, 40vmax);
+    height: auto;
+    transition: transform 180ms ease;
+    transform: rotate(0deg) scale(1);   
+}
+
+#splashText {
+    position: static;
+    font-size: 150%;
 }
 
 #comingSoon {
@@ -59,4 +74,9 @@
     position: static;
     width: clamp(10vmin, 10vmax, 20vmax);
     height: auto;
+}
+
+#goBackText {
+    font-size: 150%;
+    color: black;
 }
