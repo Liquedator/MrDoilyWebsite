@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/x-icon" href="../img/buttons/mrdoily.png">
         <link rel="stylesheet" type="text/css" href="../styles/style.css">
-        <meta name="description" content="This page is in the works and will be finished soon!" />
+        <meta name="description" content="The page where users can copy Mr. Doily's contact email to their clipboard." />
         <link rel="canonical" href="https://mrdoily.com">
-        <title>Coming Soon!</title>
+        <title>Contact Us</title>
     </head>
     <body>
         <div class="goBackControl" 
@@ -18,8 +18,14 @@
                 <!--span class="goBackText">Back to homepage</span> text is redundant--> 
             </a>
         </div>
-        <div class="comingSoonPage">
-            <img src="../img/comingSoon.png" alt="Coming Soon" id="comingSoon">
+        <div class="contactPage">
+            <div class="contactGroup">
+                <img src="../img/mrDoilyAtDesk.png" alt="Mr Doily At Desk" id="doilyDesk">
+                <img src="../img/buttons/email.png" alt="Mr. Doily Email" id="contactEmail"
+                onmouseenter="document.getElementById('contactEmail').src='../img/buttons/email-pressed.png'; document.getElementById('contactEmail').style.transform='rotate(-1deg) scale(1.05)';"
+                onmouseleave="document.getElementById('contactEmail').src='../img/buttons/email.png'; document.getElementById('contactEmail').style.transform='rotate(0deg) scale(1)';"
+                onclick = "copyToClipboard()">
+            </div>
         </div>
         <script src="../scripts/main.js"></script>
     </body>
