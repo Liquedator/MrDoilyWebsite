@@ -150,7 +150,7 @@
 /*contact.html*/
 .contactPage {
     position: relative;
-    height: 100vh;
+    height: 90vh;
 }
 .contactGroup {
     position: absolute;
@@ -178,6 +178,7 @@
 
 /*gigs.html*/
 .gigsPage {
+    height: 60vh;
     transform: translate(33%, 15%);
 }
 
@@ -267,20 +268,20 @@
         width: clamp(15vmin, 25vmax, 25vmax);
         left: 35%;
         top: 50%;
-        transform: translate(-65%, -80%);
+        transform: translate(-45%, -80%);
     }
     #doilyDesk {
         position:absolute;
-        right: -20%;
+        right: -0%;
         top: 0;
-        width: clamp(25vmin, 35vmax, 35vmax);
+        width: clamp(20vmin, 30vmax, 30vmax);
     }
 
     #contactEmail {
         position:absolute;
         right: 0;
         bottom: 0;
-        width: clamp(40vmin, 50vmax, 50vmax);
+        width: clamp(30vmin, 40vmax, 40vmax);
         transition: transform 180ms ease;
     }
 
