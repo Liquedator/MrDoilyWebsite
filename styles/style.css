@@ -24,7 +24,7 @@
     right: 0;
 }
 
-#mrdoilybutton {
+#centerButton {
     position: fixed;
     width: clamp(30vmin, 40vmax, 40vmax);
     height: auto;
