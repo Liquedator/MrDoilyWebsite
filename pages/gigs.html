@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="../img/buttons/mrdoily.png">
+        <link rel="stylesheet" type="text/css" href="../styles/style.css">
+        <meta name="description" content="The page where Mr. Doily's latest gig's poster is displayed, redirecting users on click to the ticketing page." />
+        <link rel="canonical" href="https://mrdoily.com">
+        <title>Upcoming Gigs</title>
+    </head>
+    <body>
+        <div class="goBackControl" 
+        onmouseenter="document.getElementById('goBackButton').src='../img/buttons/back-pressed.png'; document.getElementById('goBackButton').style.transform='rotate(-1deg) scale(1.05)';"
+        onmouseleave="document.getElementById('goBackButton').src='../img/buttons/back.png'; document.getElementById('goBackButton').style.transform='rotate(0deg) scale(1)';">
+            <a href="homepage.html" class="goBackLink">
+                <img src="../img/buttons/back.png" alt="Back Button" id="goBackButton">
+                <!--span class="goBackText">Back to homepage</span> text is redundant--> 
+            </a>
+        </div>
+        <div class="gigsPage">
+            <a href="https://theworkersclub.oztix.com.au/outlet/event/4047d9bc-5b4f-417f-9129-9a1f47ca7a65"><img src="../img/posters/20260315WorkersClub.png" alt="Poster1" id="poster1"
+            onmouseenter="document.getElementById('poster1').style.transform='rotate(-1deg) scale(1.05)';"
+            onmouseleave="document.getElementById('poster1').style.transform='rotate(0deg) scale(1)';"></a>
+        </div>
+        <script src="../scripts/main.js"></script>
+    </body>
+</html>

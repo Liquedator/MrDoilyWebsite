@@ -147,6 +147,47 @@
     width: clamp(12vmin, 22vmax, 22vmax);
 }
 
+/*contact.html*/
+.contactPage {
+    position: relative;
+    height: 100vh;
+}
+.contactGroup {
+    position: absolute;
+    width: clamp(15vmin, 25vmax, 25vmax);
+    left: 50%;
+    top: 50%;
+    transform: translate(-65%, -80%);
+}
+
+#doilyDesk {
+    position:absolute;
+    right: 30%;
+    top: 0;
+    width: clamp(15vmin, 25vmax, 25vmax);
+}
+
+#contactEmail {
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: clamp(20vmin, 30vmax, 30vmax);
+    transition: transform 180ms ease;
+    transform: rotate(0deg) scale(1); 
+}
+
+/*gigs.html*/
+.gigsPage {
+    transform: translate(33%, 15%);
+}
+
+#poster1 {
+    width: 30vw;
+    height: auto;
+    transition: transform 180ms ease;
+    transform: rotate(0deg) scale(1); 
+}
+
 @media (max-width: 600px) {
     .homepageBtn {
     position: absolute;
@@ -220,34 +261,34 @@
         top: 50%;
         transform: translate(-50%, -50%);
     }
-}
 
-/*contact.html*/
-.contactPage {
-    position: relative;
-    height: 100vh;
-}
-.contactGroup {
-    position: absolute;
-    width: clamp(15vmin, 25vmax, 25vmax);
-    left: 50%;
-    top: 50%;
-    transform: translate(-65%, -80%);
-}
+    .contactGroup {
+        position: absolute;
+        width: clamp(15vmin, 25vmax, 25vmax);
+        left: 35%;
+        top: 50%;
+        transform: translate(-65%, -80%);
+    }
+    #doilyDesk {
+        position:absolute;
+        right: -20%;
+        top: 0;
+        width: clamp(25vmin, 35vmax, 35vmax);
+    }
 
-#doilyDesk {
-    position:absolute;
-    right: 30%;
-    top: 0;
-    width: clamp(15vmin, 25vmax, 25vmax);
-}
+    #contactEmail {
+        position:absolute;
+        right: 0;
+        bottom: 0;
+        width: clamp(40vmin, 50vmax, 50vmax);
+        transition: transform 180ms ease;
+    }
 
-#contactEmail {
-    position:absolute;
-    left: 0;
-    bottom: 0;
-    width: clamp(20vmin, 30vmax, 30vmax);
-    transition: transform 180ms ease;
-    transform: rotate(0deg) scale(1); 
+    .gigsPage {
+        transform: translate(11%, 25%);
+    }   
+    #poster1 {
+        width: 75vw;
+        height: auto;
+    }
 }
-
