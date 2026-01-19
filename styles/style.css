@@ -26,10 +26,8 @@
 
 #mrdoilybutton {
     position: fixed;
-    width: 40vw;
-    max-width: 40vw;
+    width: clamp(30vmin, 40vmax, 40vmax);
     height: auto;
-    max-height: 40vw;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
