@@ -25,11 +25,11 @@
     right: 0;
 }
 
-.centerUnit {
+.centerUnit { /*this is a bit redundant but just keeping it should i want to attach an element to the main doily*/
     position: fixed;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -55%);
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,11 +42,6 @@
     height: auto;
     transition: transform 180ms ease;
     transform: rotate(0deg) scale(1);   
-}
-
-#splashText {
-    position: static;
-    font-size: 250%;
 }
 
 /*comingsoon.html*/
@@ -101,15 +96,44 @@
 
 #gigs {
     top: 15vh;
-    right: 25vw;
+    right: 27vw;
 }
 
 #music {
     bottom: 5vh;
-    left: 25vw;
+    left: 27vw;
 }
 
 #contact {
     bottom: 5vh;
     right: 5vw;
+}
+@media (max-width: 600px) {
+    .homepageBtn {
+    position: absolute;
+    width: clamp(15vmin, 23vmax, 23vmax);
+    height: auto;
+    transition: transform 180ms ease;
+    transform: rotate(0deg) scale(1);   
+    }
+
+    #socials {
+        top: 25vh;
+        left: 5vw;
+    }
+
+    #gigs {
+        top: 25vh;
+        right: 20vw;
+    }
+
+    #music {
+        bottom: 20vh;
+        left: 20vw;
+    }
+
+    #contact {
+        bottom: 20vh;
+        right: 5vw;
+    }
 }
