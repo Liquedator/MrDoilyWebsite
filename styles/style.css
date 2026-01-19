@@ -35,17 +35,27 @@
 
 #comingSoon {
     position: fixed;
-    width: clamp(30vmin, 40vmax, 40vmax);
+    width: clamp(30vmin, 40vmax, 50vmax);
     height: auto;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-#backButton {
+
+.goBackControl {
+    position: absolute;
     top: 0;
     left: 0;
-    position: absolute;
-    width: 10vw;
+    }
+
+.goBackLink {
+    display: flex;
+    align-items: center;
+}
+
+#goBackButton {
+    position: static;
+    width: clamp(10vmin, 10vmax, 20vmax);
     height: auto;
 }
