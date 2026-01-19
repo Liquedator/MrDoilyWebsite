@@ -1,0 +1,33 @@
+.indexPage {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    outline: 3px solid red;
+}
+
+.indexButton {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    outline: 2px solid blue;
+}
+
+#dylan {
+    margin-top: auto;
+    margin-left: auto;
+}
+
+#christian {
+    margin-top: auto;
+    margin-right: auto;
+}
+
+#jack {
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+#kieran {
+    margin-bottom: auto;
+    margin-right: auto;
+}
