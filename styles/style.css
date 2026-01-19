@@ -108,6 +108,39 @@
     bottom: 5vh;
     right: 5vw;
 }
+
+.homepageDeco {
+    position: absolute;
+    height: auto;
+    z-index: -1;
+    width: clamp(17vmin, 27vmax, 27vmax);
+}
+
+#pencil {
+    top: 10vh;
+    left: 25vw;
+}
+
+#pens {
+    bottom: 0;
+    left: 5vw;
+}
+
+#picks {
+    top: 17vh;
+    right: 0;
+}
+
+#rubberBands {
+    bottom: 0;
+    right: 25vw;
+}
+
+#harmonica {
+    top: 0;
+    right: 5vw;
+}
+
 @media (max-width: 600px) {
     .homepageBtn {
     position: absolute;
@@ -136,4 +169,37 @@
         bottom: 20vh;
         right: 5vw;
     }
+
+    .homepageDeco {
+        position: absolute;
+        height: auto;
+        z-index: -1;
+        width: clamp(30vmin, 40vmax, 40vmax);
+    }
+
+    #pencil {
+        top: 6vh;
+        left: 0;
+    }
+
+    #pens {
+        bottom: 20vh;
+        left: 0;
+    }
+
+    #picks {
+        top: 32vh;
+        right: 0;
+    }
+
+    #rubberBands {
+        bottom: 0;
+        right: 15vw;
+    }
+
+    #harmonica {
+        top: 0;
+        right: 5vw;
+    }
 }
+
