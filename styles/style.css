@@ -46,6 +46,6 @@
     top: 0;
     left: 0;
     position: absolute;
-    width: clamp(5vmin, 10vmax, 10vmax);
+    width: 2vw;
     height: auto;
 }
