@@ -2,7 +2,7 @@
     position: absolute;
     width: 25vw;
     max-width: 25vw;
-    height: 25vw;
+    height: auto;
     max-height: 25vw;
 }
 
@@ -30,8 +30,8 @@
     position: fixed;
     width: 40vw;
     max-width: 40vw;
-    height: 40vw;
+    height: auto;
     max-height: 40vw;
     left: 30vw;
-    top: 15vh;
+    top: 30vh;
 }
