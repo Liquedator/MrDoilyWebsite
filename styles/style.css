@@ -1,9 +1,7 @@
 .indexButton {
     position: absolute;
-    width: 25vw;
-    max-width: 25vw;
+    width: clamp(20vmin, 25vmax, 25vmax);
     height: auto;
-    max-height: 25vw;
 }
 
 #dylan {
@@ -32,6 +30,7 @@
     max-width: 40vw;
     height: auto;
     max-height: 40vw;
-    left: 30vw;
-    top: 30vh;
-}
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    }
