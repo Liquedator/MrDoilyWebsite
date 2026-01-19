@@ -25,10 +25,11 @@
 }
 
 #mrdoilybutton {
+    position: fixed;
     width: 40vw;
     max-width: 40vw;
     height: auto;
     max-height: 40vw;
     left: 30vw;
-    top: 30vw;
+    top: 30vh;
 }
