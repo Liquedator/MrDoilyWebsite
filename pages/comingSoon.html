@@ -10,10 +10,12 @@
         <title>Coming Soon!</title>
     </head>
     <body>
-        <div class="goBackControl">
+        <div class="goBackControl" 
+        onmouseenter="document.getElementById('goBackButton').src='../img/buttons/back-pressed.png'; document.getElementById('goBackButton').style.transform='rotate(-1deg) scale(1.05)';"
+        onmouseleave="document.getElementById('goBackButton').src='../img/buttons/back.png'; document.getElementById('goBackButton').style.transform='rotate(0deg) scale(1)';">
             <a href="../index.html" class="goBackLink">
                 <img src="../img/buttons/back.png" alt="Back Button" id="goBackButton">
-                <span id="goBackText">Go back to homepage</span>
+                <span id="goBackText">Back to homepage</span>
             </a>
         </div>
         <div class="comingSoonPage">
