@@ -10,21 +10,29 @@
         <title>Contact Us</title>
     </head>
     <body>
-        <div class="goBackControl" 
-        onmouseenter="document.getElementById('goBackButton').src='../img/buttons/back-pressed.png'; document.getElementById('goBackButton').style.transform='rotate(-1deg) scale(1.05)';"
-        onmouseleave="document.getElementById('goBackButton').src='../img/buttons/back.png'; document.getElementById('goBackButton').style.transform='rotate(0deg) scale(1)';">
+        <div class="goBackControl">
             <a href="homepage.html" class="goBackLink">
-                <img src="../img/buttons/back.png" alt="Back Button" id="goBackButton">
-                <!--span class="goBackText">Back to homepage</span> text is redundant--> 
+                <picture>
+                    <source type="image/webp" srcset="../img/buttons/back.webp">
+                    <img src="../img/buttons/back.png" alt="Back Button" id="goBackButton" 
+                    onmouseenter="this.style.filter='brightness(0.8)'; this.style.transform='rotate(-1deg) scale(1.05)';"
+                    onmouseleave="this.style.filter='brightness(1)'; this.style.transform='rotate(0deg) scale(1)';">
+                </picture>
             </a>
         </div>
         <div class="contactPage">
             <div class="contactGroup">
-                <img src="../img/mrDoilyAtDesk.png" alt="Mr Doily At Desk" id="doilyDesk">
-                <img src="../img/buttons/email.png" alt="Mr. Doily Email" id="contactEmail"
-                onmouseenter="document.getElementById('contactEmail').src='../img/buttons/email-pressed.png'; document.getElementById('contactEmail').style.transform='rotate(-1deg) scale(1.05)';"
-                onmouseleave="document.getElementById('contactEmail').src='../img/buttons/email.png'; document.getElementById('contactEmail').style.transform='rotate(0deg) scale(1)';"
-                onclick = "copyToClipboard()">
+                <picture>
+                    <source type="image/webp" srcset="../img/mrDoilyAtDesk.webp">
+                    <img src="../img/mrDoilyAtDesk.png" alt="Mr Doily At Desk" id="doilyDesk">
+                </picture>
+                <picture>
+                    <source type="image/webp" srcset="../img/buttons/email.webp" id="emailSource">
+                    <img src="../img/buttons/email.png" alt="Mr. Doily Email" id="contactEmail"
+                    onmouseenter="this.style.filter='brightness(0.8)'; this.style.transform='rotate(-1deg) scale(1.05)';"
+                    onmouseleave="this.style.filter='brightness(1)'; this.style.transform='rotate(0deg) scale(1)';"
+                    onclick = "copyToClipboard()">
+            </picture>
             </div>
         </div>
         <script src="../scripts/main.js"></script>

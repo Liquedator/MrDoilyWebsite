@@ -10,33 +10,70 @@
         <title>Mr. Doily's Homepage</title>
     </head>
     <body>
-        <div class="goBackControl" 
-        onmouseenter="document.getElementById('goBackButton').src='../img/buttons/back-pressed.png'; document.getElementById('goBackButton').style.transform='rotate(-1deg) scale(1.05)';"
-        onmouseleave="document.getElementById('goBackButton').src='../img/buttons/back.png'; document.getElementById('goBackButton').style.transform='rotate(0deg) scale(1)';">
+        <div class="goBackControl">
             <a href="../index.html" class="goBackLink">
-                <img src="../img/buttons/back.png" alt="Back Button" id="goBackButton">
-                <!--span class="goBackText">Back to landing page</span> text is redundant--> 
+                <picture>
+                    <source type="image/webp" srcset="../img/buttons/back.webp">
+                    <img src="../img/buttons/back.png" alt="Back Button" id="goBackButton" 
+                    onmouseenter="this.style.filter='brightness(0.8)'; this.style.transform='rotate(-1deg) scale(1.05)';"
+                    onmouseleave="this.style.filter='brightness(1)'; this.style.transform='rotate(0deg) scale(1)';">
+                </picture>
             </a>
         </div>
         <div class="homepage">
-            <a href="comingsoon.html"><img src="../img/buttons/socials.png" class="homepageBtn" alt="Socials Button" id="socials"
-            onmouseenter="this.src='../img/buttons/socials-pressed.png'; this.style.transform='rotate(-1deg) scale(1.05)';"
-            onmouseleave="this.src='../img/buttons/socials.png'; this.style.transform='rotate(0deg) scale(1)';"></a>
-            <a href="gigs.html"><img src="../img/buttons/gigs.png" class="homepageBtn" alt="Gigs Button" id="gigs"
-            onmouseenter="this.src='../img/buttons/gigs-pressed.png'; this.style.transform='rotate(-1deg) scale(1.05)';"
-            onmouseleave="this.src='../img/buttons/gigs.png'; this.style.transform='rotate(0deg) scale(1)';"></a>
-            <a href="comingsoon.html"><img src="../img/buttons/music.png" class="homepageBtn" alt="Music Button" id="music"
-            onmouseenter="this.src='../img/buttons/music-pressed.png'; this.style.transform='rotate(-1deg) scale(1.05)';"
-            onmouseleave="this.src='../img/buttons/music.png'; this.style.transform='rotate(0deg) scale(1)';"></a>
-            <a href="contact.html"><img src="../img/buttons/contact.png"  class="homepageBtn" alt="Contact Button" id="contact"
-            onmouseenter="this.src='../img/buttons/contact-pressed.png'; this.style.transform='rotate(-1deg) scale(1.05)';"
-            onmouseleave="this.src='../img/buttons/contact.png'; this.style.transform='rotate(0deg) scale(1)';"></a>
+            <a href="comingsoon.html">
+                <picture>
+                    <source type="image/webp" srcset="../img/buttons/socials.webp">
+                    <img src="../img/buttons/socials.png" class="homepageBtn" alt="Socials Button" id="socials"
+                    onmouseenter="this.style.filter='brightness(0.8)'; this.style.transform='rotate(-1deg) scale(1.05)';"
+                    onmouseleave="this.style.filter='brightness(1)'; this.style.transform='rotate(0deg) scale(1)';">
+                </picture>
+            </a>
+            <a href="gigs.html">
+                <picture>
+                    <source type="image/webp" srcset="../img/buttons/gigs.webp">
+                    <img src="../img/buttons/gigs.png" class="homepageBtn" alt="Gigs Button" id="gigs"
+                    onmouseenter="this.style.filter='brightness(0.8)'; this.style.transform='rotate(-1deg) scale(1.05)';"
+                    onmouseleave="this.style.filter='brightness(1)'; this.style.transform='rotate(0deg) scale(1)';">
+                </picture>
+            </a>
+            <a href="comingsoon.html">
+                <picture>
+                    <source type="image/webp" srcset="../img/buttons/music.webp">
+                    <img src="../img/buttons/music.png" class="homepageBtn" alt="Music Button" id="music"
+                    onmouseenter="this.style.filter='brightness(0.8)'; this.style.transform='rotate(-1deg) scale(1.05)';"
+                    onmouseleave="this.style.filter='brightness(1)'; this.style.transform='rotate(0deg) scale(1)';">
+                </picture>
+            </a>
+            <a href="contact.html">
+                <picture>
+                    <source type="image/webp" srcset="../img/buttons/contact.webp">
+                    <img src="../img/buttons/contact.png"  class="homepageBtn" alt="Contact Button" id="contact"
+                    onmouseenter="this.style.filter='brightness(0.8)'; this.style.transform='rotate(-1deg) scale(1.05)';"
+                    onmouseleave="this.style.filter='brightness(1)'; this.style.transform='rotate(0deg) scale(1)';">
+                </picture>
+            </a>
 
-            <img src="../img/pencil.png" class="homepageDeco" alt="Pencil" id="pencil">
-            <img src="../img/pens.png" class="homepageDeco" alt="Pens" id="pens">
-            <img src="../img/picks.png" class="homepageDeco" alt="Picks" id="picks">
-            <img src="../img/rubberBands.png" class="homepageDeco" alt="Rubber Bands" id="rubberBands">
-            <img src="../img/harmonica.png" class="homepageDeco" alt="Harmonica" id="harmonica">
+            <picture>
+                <source type="image/webp" srcset="../img/pencil.webp">
+                <img src="../img/pencil.png" class="homepageDeco" alt="Pencil" id="pencil">
+            </picture>
+            <picture>
+                <source type="image/webp" srcset="../img/pens.webp">
+                <img src="../img/pens.png" class="homepageDeco" alt="Pens" id="pens">
+            </picture>
+            <picture>
+                <source type="image/webp" srcset="../img/picks.webp">
+                <img src="../img/picks.png" class="homepageDeco" alt="Picks" id="picks">
+            </picture>
+            <picture>
+                <source type="image/webp" srcset="../img/rubberBands.webp">
+                <img src="../img/rubberBands.png" class="homepageDeco" alt="Rubber Bands" id="rubberBands">
+            </picture>
+            <picture>
+                <source type="image/webp" srcset="../img/harmonica.webp">
+                <img src="../img/harmonica.png" class="homepageDeco" alt="Harmonica" id="harmonica">
+            </picture>
         </div>
         <script src="../scripts/main.js"></script>
     </body>

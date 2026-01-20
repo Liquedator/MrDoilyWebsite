@@ -10,18 +10,25 @@
         <title>Upcoming Gigs</title>
     </head>
     <body>
-        <div class="goBackControl" 
-        onmouseenter="document.getElementById('goBackButton').src='../img/buttons/back-pressed.png'; document.getElementById('goBackButton').style.transform='rotate(-1deg) scale(1.05)';"
-        onmouseleave="document.getElementById('goBackButton').src='../img/buttons/back.png'; document.getElementById('goBackButton').style.transform='rotate(0deg) scale(1)';">
+        <div class="goBackControl">
             <a href="homepage.html" class="goBackLink">
-                <img src="../img/buttons/back.png" alt="Back Button" id="goBackButton">
-                <!--span class="goBackText">Back to homepage</span> text is redundant--> 
+                <picture>
+                    <source type="image/webp" srcset="../img/buttons/back.webp">
+                    <img src="../img/buttons/back.png" alt="Back Button" id="goBackButton" 
+                    onmouseenter="this.style.filter='brightness(0.8)'; this.style.transform='rotate(-1deg) scale(1.05)';"
+                    onmouseleave="this.style.filter='brightness(1)'; this.style.transform='rotate(0deg) scale(1)';">
+                </picture>
             </a>
         </div>
         <div class="gigsPage">
-            <a href="https://theworkersclub.oztix.com.au/outlet/event/4047d9bc-5b4f-417f-9129-9a1f47ca7a65"><img src="../img/posters/20260315WorkersClub.png" alt="Poster1" id="poster1"
-            onmouseenter="document.getElementById('poster1').style.transform='rotate(-1deg) scale(1.05)';"
-            onmouseleave="document.getElementById('poster1').style.transform='rotate(0deg) scale(1)';"></a>
+            <a href="https://theworkersclub.oztix.com.au/outlet/event/4047d9bc-5b4f-417f-9129-9a1f47ca7a65">
+                <picture>
+                    <source type="image/webp" srcset="../img/posters/20260315WorkersClub.webp">
+                    <img src="../img/posters/20260315WorkersClub.png" alt="Poster1" id="poster1"
+                    onmouseenter="this.style.filter='brightness(0.8)'; this.style.transform='rotate(-1deg) scale(1.05)';"
+                    onmouseleave="this.style.filter='brightness(1)'; this.style.transform='rotate(0deg) scale(1)';">
+                </picture>
+            </a>
         </div>
         <script src="../scripts/main.js"></script>
     </body>
