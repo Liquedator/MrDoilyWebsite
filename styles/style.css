@@ -175,6 +175,7 @@
     width: clamp(20vmin, 30vmax, 30vmax);
     transition: transform 180ms ease;
     transform: rotate(0deg) scale(1); 
+    cursor: pointer;
 }
 
 /*gigs.html*/
