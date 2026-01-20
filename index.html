@@ -11,16 +11,32 @@
     </head>
     <body>
         <div class="indexPage">
-            <img src="img/dylan.png" class="indexFaces" alt="Dylan's Doily" id="dylan">
-            <img src="img/christian.png" class="indexFaces" alt="Christians's Doily" id="christian">
-            <img src="img/jack.png" class="indexFaces" alt="Jack's Doily" id="jack">
-            <img src="img/kieran.png"  class="indexFaces" alt="Kieran's Doily" id="kieran">
+            <picture>
+                <source type="image/webp" srcset="img/dylan.webp">
+                <img src="img/dylan.png" class="indexFaces" alt="Dylan's Doily" id="dylan">
+            </picture>
+            <picture>
+                <source type="image/webp" srcset="img/christian.webp">
+                <img src="img/christian.png" class="indexFaces" alt="Christians's Doily" id="christian">
+            </picture>
+            <picture>
+                <source type="image/webp" srcset="img/jack.webp">
+                <img src="img/jack.png" class="indexFaces" alt="Jack's Doily" id="jack">
+            </picture>
+            <picture>
+                <source type="image/webp" srcset="img/kieran.webp">
+                <img src="img/kieran.png"  class="indexFaces" alt="Kieran's Doily" id="kieran">
+            </picture>
         </div>
         <div class = "centerUnit">
             <a href="pages/homepage.html">
-                <img src="img/buttons/mrdoily.png" alt="Mr. Doily Button" id="centerButton"
-                onmouseenter="this.src='img/buttons/mrdoily-pressed.png'; this.style.transform='rotate(-1deg) scale(1.05)';"
-                onmouseleave="this.src='img/buttons/mrdoily.png'; this.style.transform='rotate(0deg) scale(1)';">
+                <picture>
+                    <source type="image/webp" srcset="img/buttons/mrdoily.webp">
+                    <img src="img/buttons/mrdoily.png" alt="Mr. Doily Button" id="centerButton"
+                    onmouseenter="this.style.filter='brightness(0.8)'; this.style.transform='rotate(-1deg) scale(1.05)';"
+                    onmouseleave="this.style.filter='brightness(1)'; this.style.transform='rotate(0deg) scale(1)';">
+                </picture>
+                
             </a>
         </div>
         <script src="../scripts/main.js"></script>
