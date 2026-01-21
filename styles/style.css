@@ -180,15 +180,17 @@
 
 /*gigs.html*/
 .gigsPage {
+    position: relative;
     height: 60vh;
-    transform: translate(33%, 15%);
 }
 
 #poster1 {
+    position: absolute;
     width: 30vw;
     height: auto;
     transition: transform 180ms ease;
-    transform: rotate(0deg) scale(1); 
+    left: 35%;
+    top: 15%;
 }
 
 @media (max-width: 600px) {
@@ -286,12 +288,11 @@
         width: clamp(30vmin, 40vmax, 40vmax);
         transition: transform 180ms ease;
     }
-
-    .gigsPage {
-        transform: translate(12%, 25%);
-    }   
+    
     #poster1 {
-        width: 75vw;
+        width: 65vw;
         height: auto;
+        left: 17%;
+        top: 35%;
     }
 }
