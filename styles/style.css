@@ -170,7 +170,7 @@
 
 #contactEmail {
     position:absolute;
-    left: 0;
+    left: 5%;
     bottom: 0;
     width: clamp(20vmin, 30vmax, 30vmax);
     transition: transform 180ms ease;
