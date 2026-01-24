@@ -195,13 +195,13 @@ html, body {
 
 @media (max-width: 600px) {
     .indexPage {
-        height: 95vh;
+        height: 90vh;
     }
 
     #centerButton {
         position: absolute;
         left: 50%;
-        top: 15%;
+        top: 20%;
         transform: translate(-50%, -50%);
         width: clamp(25vmin, 30vmax, 30vmax);
         height: auto;
@@ -225,24 +225,24 @@ html, body {
     }
 
     #music {
-        bottom: 2vh;
+        bottom: 5vh;
         left: 5vw;
     }
 
     #contact {
-        bottom: 2vh;
+        bottom: 5vh;
         right: 5vw;
     }
 
     #about {
-        bottom: 25vh;
+        bottom: 26vh;
         left: 5vw;
         transform: rotate(0deg) scale(1);
     }
 
     #merch {
         top: auto;
-        bottom: 25vh;
+        bottom: 26vh;
         right: 5vw;
         transform: rotate(0deg) scale(1);
     }
