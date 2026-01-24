@@ -265,7 +265,7 @@ html, body {
     }
 
     #pencil {
-        top: 6vh;
+        top: 0;
         left: 0;
         width: clamp(10vmin, 20vmax, 20vmax);
     }
@@ -289,7 +289,7 @@ html, body {
     }
 
     #harmonica {
-        top: 0;
+        top: 12vw;
         right: 0;
         width: clamp(20vmin, 30vmax, 30vmax);
     }
