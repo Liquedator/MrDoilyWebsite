@@ -194,6 +194,10 @@ html, body {
 }
 
 @media (max-width: 600px) {
+    .indexPage {
+        height: 95vh;
+    }
+
     #centerButton {
         position: absolute;
         left: 50%;
@@ -204,7 +208,7 @@ html, body {
     }   
     .homepageBtn {
         position: absolute;
-        width: clamp(15vmin, 23vmax, 23vmax);
+        width: clamp(15vmin, 20vmax, 20vmax);
         height: auto;
         transition: transform 180ms ease;
         transform: rotate(0deg) scale(1);   
