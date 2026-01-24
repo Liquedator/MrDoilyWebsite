@@ -1,47 +1,113 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 /*index.html*/
-.indexFaces {
+.indexPage {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.homepageBtn {
     position: absolute;
-    width: clamp(20vmin, 25vmax, 25vmax);
-    height: auto;
-}
-
-#dylan {
-    top: 0;
-    left: 0;
-}
-
-#christian {
-    top: 0;
-    right: 0;
-}
-
-#jack {
-    bottom: 0;
-    left: 0;
-}
-
-#kieran {
-    bottom: 0;
-    right: 0;
-}
-
-.centerUnit { /*this is a bit redundant but just keeping it should i want to attach an element to the main doily*/
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    text-align: center;
-}
-
-#centerButton {
-    width: clamp(30vmin, 40vmax, 40vmax);
+    width: clamp(15vmin, 20vmax, 20vmax);
     height: auto;
     transition: transform 180ms ease;
     transform: rotate(0deg) scale(1);   
+}
+
+.homepageBtn:hover{
+  filter: brightness(0.8);
+  transform: rotate(-1deg) scale(1.05);
+}
+
+#socials {
+    top: 0;
+    left: 0;
+}
+
+#gigs {
+    top: 0;
+    right: 0;
+}
+
+#music {
+    bottom: 0;
+    left: 0;
+}
+
+#contact {
+    bottom: 0;
+    right: 0;
+}
+
+#about{
+    bottom: 50%;
+    left: 50%;
+    transform: translate(80%, 50%) rotate(0deg) scale(1);
+}
+
+#about:hover{
+    filter: brightness(0.8);
+    transform: translate(80%, 50%) rotate(-1deg) scale(1.05);
+}
+
+#merch{
+    top: 50%;
+    right: 50%;
+    transform: translate(-80%, -50%) rotate(0deg) scale(1);
+}
+
+#merch:hover{
+    filter: brightness(0.8);
+    transform: translate(-80%, -50%) rotate(-1deg) scale(1.05);
+}
+
+#centerButton {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: clamp(15vmin, 30vmax, 30vmax);
+    height: auto;
+}
+
+#pencil {
+    top: 0vh;
+    left: 20vw;
+    width: clamp(10vmin, 12vmax, 12vmax);
+}
+
+#pens {
+    bottom: 0;
+    left: 6vw;
+    width: clamp(12vmin, 22vmax, 22vmax);
+}
+
+#picks {
+    top: 32vh;
+    right: 0;
+    width: clamp(10vmin, 15vmax, 15vmax);
+}
+
+#rubberBands {
+    bottom: 0;
+    right: 25vw;
+    width: clamp(17vmin, 27vmax, 27vmax);
+}
+
+#harmonica {
+    top: 10vh;
+    right: 30vw;
+    width: clamp(12vmin, 22vmax, 22vmax);
+}
+
+.homepageDeco {
+    position: absolute;
+    z-index: -1;
+    width: clamp(17vmin, 27vmax, 27vmax);
 }
 
 /*comingsoon.html*/
@@ -80,72 +146,6 @@
 .goBackText {
     font-size: 125%;
     color: black;
-}
-
-/*homepage.html*/
-.homepageBtn {
-    position: absolute;
-    width: clamp(15vmin, 23vmax, 23vmax);
-    height: auto;
-    transition: transform 180ms ease;
-    transform: rotate(0deg) scale(1);   
-}
-
-#socials {
-    top: 15vh;
-    left: 5vw;
-}
-
-#gigs {
-    top: 15vh;
-    right: 27vw;
-}
-
-#music {
-    bottom: 5vh;
-    left: 27vw;
-}
-
-#contact {
-    bottom: 5vh;
-    right: 5vw;
-}
-
-.homepageDeco {
-    position: absolute;
-    height: vh;
-    z-index: -1;
-    width: clamp(17vmin, 27vmax, 27vmax);
-}
-
-#pencil {
-    top: 10vh;
-    left: 35vw;
-    width: clamp(10vmin, 12vmax, 12vmax);
-}
-
-#pens {
-    bottom: 0;
-    left: 5vw;
-    width: clamp(12vmin, 22vmax, 22vmax);
-}
-
-#picks {
-    top: 18vh;
-    right: 0;
-    width: clamp(10vmin, 15vmax, 15vmax);
-}
-
-#rubberBands {
-    bottom: 0;
-    right: 25vw;
-    width: clamp(17vmin, 27vmax, 27vmax);
-}
-
-#harmonica {
-    top: 0;
-    right: 5vw;
-    width: clamp(12vmin, 22vmax, 22vmax);
 }
 
 /*contact.html*/
@@ -194,33 +194,65 @@
 }
 
 @media (max-width: 600px) {
+    #centerButton {
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        transform: translate(-50%, -50%);
+        width: clamp(25vmin, 30vmax, 30vmax);
+        height: auto;
+    }   
     .homepageBtn {
-    position: absolute;
-    width: clamp(15vmin, 23vmax, 23vmax);
-    height: auto;
-    transition: transform 180ms ease;
-    transform: rotate(0deg) scale(1);   
+        position: absolute;
+        width: clamp(15vmin, 23vmax, 23vmax);
+        height: auto;
+        transition: transform 180ms ease;
+        transform: rotate(0deg) scale(1);   
     }
 
     #socials {
-        top: 20vh;
+        top: 28vh;
         left: 5vw;
     }
 
     #gigs {
-        top: 20vh;
+        top: 28vh;
         right: 5vw;
     }
 
     #music {
-        bottom: 20vh;
+        bottom: 2vh;
         left: 5vw;
     }
 
     #contact {
-        bottom: 20vh;
+        bottom: 2vh;
         right: 5vw;
     }
+
+    #about {
+        bottom: 25vh;
+        left: 5vw;
+        transform: rotate(0deg) scale(1);
+    }
+
+    #merch {
+        top: auto;
+        bottom: 25vh;
+        right: 5vw;
+        transform: rotate(0deg) scale(1);
+    }
+
+    #about:hover {
+        filter: brightness(0.8);
+        transform: rotate(-1deg) scale(1.05);
+    }
+
+    #merch:hover {
+        filter: brightness(0.8);
+        transform: rotate(-1deg) scale(1.05);
+    }
+
 
     .homepageDeco {
         position: absolute;
@@ -274,6 +306,7 @@
         top: 50%;
         transform: translate(-45%, -80%);
     }
+
     #doilyDesk {
         position:absolute;
         right: -0%;
