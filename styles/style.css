@@ -203,7 +203,7 @@ html, body {
         left: 50%;
         top: 20%;
         transform: translate(-50%, -50%);
-        width: clamp(25vmin, 30vmax, 30vmax);
+        width: clamp(25vmin, 27vmax, 27vmax);
         height: auto;
     }   
     .homepageBtn {
