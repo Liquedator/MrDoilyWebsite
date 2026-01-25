@@ -215,34 +215,34 @@ html, body {
     }
 
     #socials {
-        top: 30vh;
+        top: 27vh;
         left: 5vw;
     }
 
     #gigs {
-        top: 30vh;
+        top: 27vh;
         right: 5vw;
     }
 
     #music {
-        bottom: 0vh;
+        bottom: 3vh;
         left: 5vw;
     }
 
     #contact {
-        bottom: 0vh;
+        bottom: 3vh;
         right: 5vw;
     }
 
     #about {
-        bottom: 19.5vh;
+        bottom: 22.5vh;
         left: 5vw;
         transform: rotate(0deg) scale(1);
     }
 
     #merch {
         top: auto;
-        bottom: 19.5vh;
+        bottom: 22.5vh;
         right: 5vw;
         transform: rotate(0deg) scale(1);
     }
