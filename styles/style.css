@@ -229,7 +229,7 @@ html, body {
 }
 
 .musicBtn {
-    top: 23%;
+    top: 21%;
     left: 40%;
     position: absolute;
     width: 20vw;
@@ -244,15 +244,15 @@ html, body {
 }
 
 #appleMusic {
-    top: 40%;
+    top: 38%;
 }
 
 #bandcamp {
-    top: 57%;
+    top: 55%;
 }
 
 #soundcloud {
-    top: 74%;
+    top: 72%;
 }
 
 @media (max-width: 600px) {
