@@ -194,9 +194,9 @@ html, body {
 }
 
 /*socials.html*/
-#socialsPage {
+.socialsPage {
     position: relative;
-    height: 60vh;
+    height: 90vh;
 }
 
 .socialsBtn {
@@ -215,12 +215,46 @@ html, body {
 }
 
 #facebook {
-    top: 40%;
+    top: 42%;
 }
 
 #youtube {
-    top: 55%;
+    top: 59%;
 }
+
+/*music.html*/
+.musicPage {
+    position: relative;
+    height: 90vh;
+}
+
+.musicBtn {
+    top: 23%;
+    left: 40%;
+    position: absolute;
+    width: 20vw;
+    height: auto;
+    transition: transform 180ms ease;
+    transform: rotate(0deg) scale(1);
+}
+
+.musicBtn:hover {
+    filter: brightness(0.8);
+    transform: rotate(-1deg) scale(1.05);
+}
+
+#appleMusic {
+    top: 40%;
+}
+
+#bandcamp {
+    top: 57%;
+}
+
+#soundcloud {
+    top: 74%;
+}
+
 @media (max-width: 600px) {
     .indexPage {
         height: 90vh;
@@ -380,6 +414,11 @@ html, body {
     }
     
     .socialsBtn {
+        width: 70vw;
+        left: 17%;
+    }
+
+    .musicBtn {
         width: 70vw;
         left: 17%;
     }
