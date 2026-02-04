@@ -193,6 +193,34 @@ html, body {
     top: 15%;
 }
 
+/*socials.html*/
+#socialsPage {
+    position: relative;
+    height: 60vh;
+}
+
+.socialsBtn {
+    top: 25%;
+    left: 40%;
+    position: absolute;
+    width: 20vw;
+    height: auto;
+    transition: transform 180ms ease;
+    transform: rotate(0deg) scale(1);
+}
+
+.socialsBtn:hover {
+    filter: brightness(0.8);
+    transform: rotate(-1deg) scale(1.05);
+}
+
+#facebook {
+    top: 40%;
+}
+
+#youtube {
+    top: 55%;
+}
 @media (max-width: 600px) {
     .indexPage {
         height: 90vh;
@@ -349,5 +377,10 @@ html, body {
         height: auto;
         left: 17%;
         top: 35%;
+    }
+    
+    .socialsBtn {
+        width: 70vw;
+        left: 17%;
     }
 }
