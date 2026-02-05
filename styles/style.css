@@ -314,7 +314,7 @@ html, body {
 
     #music {
         top: auto;
-        bottom: 22.5vh;
+        bottom: 23vh;
         left: 5vw;
         transform: rotate(0deg) scale(1);
     }
@@ -322,7 +322,7 @@ html, body {
     #merch {
         left: auto;
         top: auto;
-        bottom: 22.5vh;
+        bottom: 23vh;
         right: 5vw;
         transform: rotate(0deg) scale(1);
     }
