@@ -200,7 +200,7 @@ html, body {
 }
 
 .socialsBtn {
-    top: 25%;
+    top: 20%;
     left: 40%;
     position: absolute;
     width: 20vw;
@@ -214,12 +214,16 @@ html, body {
     transform: rotate(-1deg) scale(1.05);
 }
 
+#tiktok {
+    top: 37%;
+}
+
 #facebook {
-    top: 42%;
+    top: 54%;
 }
 
 #youtube {
-    top: 59%;
+    top: 71%;
 }
 
 /*music.html*/
