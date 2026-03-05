@@ -1,5 +1,5 @@
-/pages/comingsoon /comingsoon 200
-/pages/contact /contact200
-/pages/gigs /gigs 200
-/pages/music /music 200
-/pages/socials /socials 200
+/comingsoon /pages/comingsoon 200
+/contact /pages/contact 200
+/gigs /pages/gigs 200
+/music /pages/music 200
+/socials /pages/socials 200
