@@ -234,7 +234,7 @@ html, body {
 
 .musicBtn {
     top: 21%;
-    left: 40%;
+    left: 70%;
     position: absolute;
     width: 20vw;
     height: auto;
@@ -245,6 +245,15 @@ html, body {
 .musicBtn:hover {
     filter: brightness(0.8);
     transform: rotate(-1deg) scale(1.05);
+}
+
+#videoEmbed {
+    position: absolute;
+    left: 9%;
+    top: 21%;
+    min-height: 61.5vh;
+    height: auto;
+    width: 55vw;
 }
 
 #appleMusic {
@@ -421,9 +430,32 @@ html, body {
         width: 70vw;
         left: 17%;
     }
-
     .musicBtn {
+
         width: 70vw;
         left: 17%;
     }
+    
+    #videoEmbed {
+        top: 10%;
+        left: 10%;
+        width: 80vw;
+        min-height: 20vh;
+    }
+    #spotify {
+        top: 38%;
+    }
+
+    #appleMusic {
+        top: 55%;
+    }
+
+    #bandcamp {
+        top: 72%;
+    }
+
+    #soundcloud {
+        top: 89%;
+    }
+
 }
