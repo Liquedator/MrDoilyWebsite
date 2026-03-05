@@ -247,7 +247,7 @@ html, body {
     transform: rotate(-1deg) scale(1.05);
 }
 
-#videoEmbed {
+#musicVideo {
     position: absolute;
     left: 9%;
     top: 21%;
@@ -431,31 +431,30 @@ html, body {
         left: 17%;
     }
     .musicBtn {
-
         width: 70vw;
         left: 17%;
     }
     
-    #videoEmbed {
+    #musicVideo {
         top: 10%;
         left: 10%;
         width: 80vw;
         min-height: 20vh;
     }
     #spotify {
-        top: 38%;
+        top: 35%;
     }
 
     #appleMusic {
-        top: 55%;
+        top: 47%;
     }
 
     #bandcamp {
-        top: 72%;
+        top: 59%;
     }
 
     #soundcloud {
-        top: 89%;
+        top: 71%;
     }
 
 }
