@@ -479,4 +479,23 @@ html, body {
         top: 77%;
     }
 
+    .gigsTitle {
+        text-align: center;
+        font-size: 4vw;
+        margin-top: 1vh;
+    }
+
+    .gigsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 2vw;
+        gap: 10vw;
+    }
+
+    .gigsContainer > a {
+        width: 40vw;
+        box-sizing: border-box;
+    }
 }
