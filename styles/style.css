@@ -297,6 +297,15 @@ html, body {
     top: 72%;
 }
 
+/*about.html*/
+.aboutDesc {
+    font-size: 1.5vw;
+    text-align: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vh;
+}
+
 @media (max-width: 600px) {
     .indexPage {
         height: 90vh;
