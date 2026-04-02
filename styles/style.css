@@ -306,6 +306,54 @@ html, body {
     margin-top: 5vh;
 }
 
+.aboutPics {
+  position: relative;
+  width: 45vw;
+  height: 60vh;
+  overflow: hidden;
+  margin: 2vh auto 0 auto;
+}
+
+.track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  height:100%;
+  width: 100%;
+}
+
+.slide {
+  width: 45vw;
+  user-select: none;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: block;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+    left: 10px; 
+}
+
+.next {
+    right: 10px; 
+}
+
 @media (max-width: 600px) {
     .indexPage {
         height: 90vh;
