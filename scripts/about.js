@@ -55,7 +55,7 @@ let index = 1;
 let isAnimating = false;
 
 let autoSlideInterval;
-const AUTO_DELAY = 3000;
+const AUTO_DELAY = 10000;
 
 const firstClone = slides[0].cloneNode(true);
 const lastClone = slides[slides.length - 1].cloneNode(true);

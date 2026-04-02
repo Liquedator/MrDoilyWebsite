@@ -309,7 +309,7 @@ html, body {
 .aboutPics {
   position: relative;
   width: 45vw;
-  height: 60vh;
+  aspect-ratio: 3/2;
   overflow: hidden;
   margin: 2vh auto 0 auto;
 }
@@ -554,5 +554,24 @@ button {
     .gigsContainer > a {
         width: 40vw;
         box-sizing: border-box;
+    }
+
+    .aboutDesc {
+        font-size: 5vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 10vh;
+    }
+
+    .aboutPics {
+        top: 8vh;
+        width: 80vw;
+    }
+
+    .slide {
+        width: 80vw;
+        user-select: none;
+        flex-shrink: 0;
+        height: 100%;
     }
 }
