@@ -18,6 +18,10 @@ function goToNextSlide() {
 
   track.style.transition = 'transform 0.4s ease-in-out';
   track.style.transform = `translateX(-${getSlideWidth() * index}px)`;
+
+  setTimeout(() => {
+    isAnimating = false;
+  }, 450);
 }
 
 function goToPrevSlide() {
@@ -28,6 +32,10 @@ function goToPrevSlide() {
 
   track.style.transition = 'transform 0.4s ease-in-out';
   track.style.transform = `translateX(-${getSlideWidth() * index}px)`;
+
+  setTimeout(() => {
+    isAnimating = false;
+  }, 450);
 }
 
 function startAutoSlide() {
