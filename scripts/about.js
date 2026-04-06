@@ -1,5 +1,5 @@
 function getSlideWidth() {
-  return document.querySelector('.slide').clientWidth;
+  return document.querySelector('.slide').getBoundingClientRect().width;
 }
 
 function shuffle(array) {
