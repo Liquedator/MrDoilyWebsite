@@ -221,6 +221,18 @@ html, body {
     transform: rotate(-1deg) scale(1.05);
 }
 
+.posterCaption {
+    text-align: center;
+    font-size: 1.5vw;
+    margin-top: 1vh;
+    background-color: black;
+    color: white;
+    padding: 0.5vh;
+}
+
+a {
+  text-decoration: none;
+}
 
 /*socials.html*/
 .socialsPage {
@@ -556,6 +568,10 @@ button {
         box-sizing: border-box;
     }
 
+    .posterCaption {
+        font-size: 3vw;
+    }
+    
     .aboutDesc {
         font-size: 5vw;
         margin-left: 10vw;
