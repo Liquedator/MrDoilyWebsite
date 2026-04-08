@@ -573,10 +573,10 @@ button {
     }
     
     .aboutDesc {
-        font-size: 5vw;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        margin-top: 10vh;
+        font-size: 4.5vw;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        margin-top: 6.5vh;
     }
 
     .aboutPics {

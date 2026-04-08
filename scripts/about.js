@@ -1,5 +1,5 @@
 function getSlideWidth() {
-  return document.querySelector('.slide').clientWidth;
+  return document.querySelector('.slide').getBoundingClientRect().width;
 }
 
 function shuffle(array) {
@@ -18,6 +18,10 @@ function goToNextSlide() {
 
   track.style.transition = 'transform 0.4s ease-in-out';
   track.style.transform = `translateX(-${getSlideWidth() * index}px)`;
+
+  setTimeout(() => {
+    isAnimating = false;
+  }, 450);
 }
 
 function goToPrevSlide() {
@@ -28,6 +32,10 @@ function goToPrevSlide() {
 
   track.style.transition = 'transform 0.4s ease-in-out';
   track.style.transform = `translateX(-${getSlideWidth() * index}px)`;
+
+  setTimeout(() => {
+    isAnimating = false;
+  }, 450);
 }
 
 function startAutoSlide() {
@@ -55,8 +63,7 @@ let index = 1;
 let isAnimating = false;
 
 let autoSlideInterval;
-const AUTO_DELAY = 10000;
-
+const AUTO_DELAY = 5000;
 const firstClone = slides[0].cloneNode(true);
 const lastClone = slides[slides.length - 1].cloneNode(true);
 
