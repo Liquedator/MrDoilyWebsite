@@ -227,7 +227,8 @@ html, body {
     margin-top: 0.5vw;
     background-color: black;
     color: white;
-    padding: 0.5vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
     overflow: hidden;
     position: relative; 
     height: 2vw;
@@ -240,17 +241,28 @@ html, body {
     white-space: nowrap;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%) translateX(100%);
-    animation: scrollText 8s linear infinite;
+    transform: translateY(-50%) translateX(15px);
+    animation: scrollText 4s linear infinite;
+    animation-direction: alternate;
 }
 
+
 @keyframes scrollText {
-  from {
-    transform: translateY(-50%) translateX(100%);
-  }
-  to {
-    transform: translateY(-50%) translateX(-100%);
-  }
+    0% {
+        transform: translateY(-50%) translateX(15px);
+    }
+
+    20% {
+        transform: translateY(-50%) translateX(15px);
+    }
+
+    80% {
+        transform: translateY(-50%) translateX(calc(-1 * var(--text-width)));
+    }
+
+    100% {
+        transform: translateY(-50%) translateX(calc(-1 * var(--text-width)));
+    }
 }
 
 a {
