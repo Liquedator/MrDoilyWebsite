@@ -222,12 +222,35 @@ html, body {
 }
 
 .posterCaption {
-    text-align: center;
+    text-align: left;
     font-size: 1.5vw;
-    margin-top: 1vh;
+    margin-top: 0.5vw;
     background-color: black;
     color: white;
-    padding: 0.5vh;
+    padding: 0.5vw;
+    overflow: hidden;
+    position: relative; 
+    height: 2vw;
+    display: flex;
+    align-items: center;
+}
+
+.posterCaption span {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(100%);
+    animation: scrollText 8s linear infinite;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateY(-50%) translateX(100%);
+  }
+  to {
+    transform: translateY(-50%) translateX(-100%);
+  }
 }
 
 a {
@@ -570,6 +593,8 @@ button {
 
     .posterCaption {
         font-size: 3vw;
+        height: 4vw;
+        margin-top: 1vw;
     }
     
     .aboutDesc {
