@@ -240,7 +240,7 @@ html, body {
     display: inline-block;
     white-space: nowrap;
     top: 50%;
-    transform: translateX(15px);
+    transform: translateX(var(--offset));
     animation: scrollText 4s linear infinite;
     animation-direction: alternate;
 }
@@ -248,7 +248,7 @@ html, body {
 
 @keyframes scrollText {
     0%, 20% {
-        transform: translateX(15px);
+        transform: translateX(var(--offset));
     }
 
     80%, 100% {

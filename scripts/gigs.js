@@ -7,9 +7,10 @@ function updateScrollDistance() {
         const spanWidth = span.getBoundingClientRect().width;
         container.getBoundingClientRect();
         const containerWidth = container.getBoundingClientRect().width;
+        const offset = containerWidth * 0.03;
+        const textWidth = spanWidth - containerWidth + offset;
 
-        const textWidth = spanWidth - containerWidth + 15;
-
+        span.style.setProperty('--offset', `${Math.max(0, offset)}px`);
         span.style.setProperty('--text-width', `${Math.max(0, textWidth)}px`);
 
         span.style.animation = 'none';
