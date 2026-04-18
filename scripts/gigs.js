@@ -3,8 +3,18 @@ function updateScrollDistance() {
         const span = container.querySelector('span');
         if (!span) return;
 
-        const textWidth = span.scrollWidth - container.clientWidth + 15;
+        span.getBoundingClientRect();
+        const spanWidth = span.getBoundingClientRect().width;
+        container.getBoundingClientRect();
+        const containerWidth = container.getBoundingClientRect().width;
+
+        const textWidth = spanWidth - containerWidth + 15;
+
         span.style.setProperty('--text-width', `${Math.max(0, textWidth)}px`);
+
+        span.style.animation = 'none';
+        span.offsetHeight; // force reflow
+        span.style.animation = '';
     });
 }
 
