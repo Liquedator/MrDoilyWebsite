@@ -13,7 +13,7 @@ function updateScrollDistance() {
         span.style.setProperty('--text-width', `${Math.max(0, textWidth)}px`);
 
         span.style.animation = 'none';
-        span.offsetHeight; // force reflow
+        span.offsetHeight;
         span.style.animation = '';
     });
 }

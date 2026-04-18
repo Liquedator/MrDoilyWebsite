@@ -1,0 +1,5 @@
+User-agent: Googlebot-Image
+Disallow: /img/
+Allow: /img/photos/
+Allow: /img/logo.png
+Allow: /img/logo.webp
