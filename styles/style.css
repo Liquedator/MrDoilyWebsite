@@ -214,6 +214,27 @@ html, body {
     height: auto;
     display: block;
     transition: transform 180ms ease;
+    aspect-ratio: 1 / 1.414;
+}
+
+.headliner {
+    box-sizing: border-box;
+    line-height: 0px;
+    border: 0.5vw solid;
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+    animation: 10s rotate linear infinite;
+}
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
 }
 
 .gigsPoster:hover {
@@ -586,6 +607,10 @@ button {
         padding-right: 5vw;
         padding-bottom: 2vw;
         gap: 10vw;
+    }
+
+    .headliner {
+        border-width: 1vw;
     }
 
     .gigsContainer > a {
