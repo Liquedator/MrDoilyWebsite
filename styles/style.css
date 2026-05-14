@@ -222,7 +222,7 @@ html, body {
     line-height: 0px;
     border: 0.5vw solid;
     border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
-    animation: 10s rotate linear infinite;
+    animation: 6s rotate linear infinite;
 }
 
 @keyframes rotate {
