@@ -237,7 +237,7 @@ html, body {
   inherits: false;
 }
 
-.gigsPoster:hover {
+.externalLink:hover {
     filter: brightness(0.8);
     transform: rotate(-1deg) scale(1.05);
 }
