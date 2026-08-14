@@ -204,9 +204,11 @@ html, body {
     gap: 4.6vw;
 }
 
-.gigsContainer > a {
+
+.gigItem {
     width: 20vw;
     box-sizing: border-box;
+    min-width: 0;
 }
 
 .gigsPoster {
@@ -613,7 +615,7 @@ button {
         border-width: 1vw;
     }
 
-    .gigsContainer > a {
+    .gigItem     {
         width: 40vw;
         box-sizing: border-box;
     }
