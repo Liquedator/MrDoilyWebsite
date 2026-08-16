@@ -323,7 +323,7 @@ a {
 }
 
 .musicBtn {
-    top: 21%;
+    top: 26%;
     left: 70%;
     position: absolute;
     width: 20vw;
@@ -347,15 +347,11 @@ a {
 }
 
 #appleMusic {
-    top: 38%;
+    top: 46.5%;
 }
 
 #bandcamp {
-    top: 55%;
-}
-
-#soundcloud {
-    top: 72%;
+    top: 67%;
 }
 
 /*about.html*/
@@ -579,21 +575,18 @@ button {
         top: 10%;
         left: 10%;
         width: 80vw;
-        min-height: 20vh;
+        min-height: 30vh;
     }
+
     #spotify {
-        top: 35%;
+        top: 45%;
     }
 
     #appleMusic {
-        top: 49%;
+        top: 61%;
     }
 
     #bandcamp {
-        top: 63%;
-    }
-
-    #soundcloud {
         top: 77%;
     }
 
