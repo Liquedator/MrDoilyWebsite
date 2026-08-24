@@ -195,6 +195,11 @@ html, body {
     margin-top: 2vh;
 }
 
+.gigsSubtitle {
+    text-align: center;
+    font-size: 1.25vw;
+}
+
 .gigsContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -594,6 +599,11 @@ button {
         text-align: center;
         font-size: 4vw;
         margin-top: 1vh;
+    }
+
+    .gigsSubtitle {
+        text-align: center;
+        font-size: 3vw;
     }
 
     .gigsContainer {
