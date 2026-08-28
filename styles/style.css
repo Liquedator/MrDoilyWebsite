@@ -1,6 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+.coming-soon-regular {
+  font-family: "Coming Soon", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 html, body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "Coming Soon", cursive;
+    font-weight: 800;
+    line-height: 1.45;
+}
+
+b {
+    -webkit-text-stroke: 1px currentColor;
 }
 
 /*index.html*/
@@ -191,13 +206,13 @@ html, body {
 /*gigs.html*/
 .gigsTitle {
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.8vw;
     margin-top: 2vh;
 }
 
 .gigsSubtitle {
     text-align: center;
-    font-size: 1.25vw;
+    font-size: 1.2vw;
 }
 
 .gigsContainer {
@@ -361,7 +376,7 @@ a {
 
 /*about.html*/
 .aboutDesc {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     text-align: center;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -603,7 +618,7 @@ button {
 
     .gigsSubtitle {
         text-align: center;
-        font-size: 3vw;
+        font-size: 2.75vw;
     }
 
     .gigsContainer {
@@ -630,7 +645,7 @@ button {
     }
     
     .aboutDesc {
-        font-size: 4.5vw;
+        font-size: 3.6vw;
         margin-left: 15vw;
         margin-right: 15vw;
         margin-top: 6.5vh;
