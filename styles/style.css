@@ -25,6 +25,7 @@ b {
     width: 100vw;
     overflow: hidden;
 }
+
 .homepageBtn {
     position: absolute;
     width: clamp(15vmin, 20vmax, 20vmax);
