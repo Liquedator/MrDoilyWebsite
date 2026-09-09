@@ -14,11 +14,6 @@ html, body {
     line-height: 1.45;
 }
 
-body {
-    position: relative;
-    min-height: 100lvh;
-}
-
 b {
     -webkit-text-stroke: 1px currentColor;
 }
@@ -691,5 +686,11 @@ button {
         user-select: none;
         flex-shrink: 0;
         height: 100%;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 600px){
+    body {
+        min-height: 100lvh;
     }
 }
