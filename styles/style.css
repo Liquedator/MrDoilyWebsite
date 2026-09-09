@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
 
 .coming-soon-regular {
-  font-family: "Coming Soon", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Coming Soon", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 html, body {
@@ -16,6 +16,21 @@ html, body {
 
 b {
     -webkit-text-stroke: 1px currentColor;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1vw;
+    color: black;
+}
+
+.copyrightScrollable {
+    font-size: 1vw;
+    color: black;
+    text-align: center;
 }
 
 /*index.html*/
@@ -109,7 +124,7 @@ b {
 }
 
 #rubberBands {
-    bottom: 0;
+    bottom: 5vh;
     right: 25vw;
     width: clamp(17vmin, 27vmax, 27vmax);
 }
@@ -217,6 +232,7 @@ b {
 }
 
 .gigsContainer {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding-left: 3vw;
@@ -255,9 +271,9 @@ b {
 }
 
 @property --angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
 }
 
 .externalLink:hover {
@@ -301,7 +317,7 @@ b {
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 /*socials.html*/
@@ -385,43 +401,43 @@ a {
 }
 
 .aboutPics {
-  position: relative;
-  width: 45vw;
-  aspect-ratio: 3/2;
-  overflow: hidden;
-  margin: 2vh auto 0 auto;
+    position: relative;
+    width: min(50vw, 75vh);
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    margin: 2vh auto 0;
 }
 
 .track {
-  display: flex;
-  transition: transform 0.4s ease-in-out;
-  height:100%;
-  width: 100%;
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    height:100%;
+    width: 100%;
 }
 
 .slide {
-  width: 45vw;
-  user-select: none;
-  flex-shrink: 0;
-  height: 100%;
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    user-select: none;
 }
 
 .slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
 }
 
 button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
 
 .prev {
@@ -433,6 +449,14 @@ button {
 }
 
 @media (max-width: 600px) {
+    .copyright {
+        font-size: 2.5vw;
+    }
+
+    .copyrightScrollable {
+        font-size: 2.5vw;
+    }
+
     .indexPage {
         height: 90vh;
     }
