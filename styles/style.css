@@ -691,6 +691,7 @@ button {
 
 @media (orientation: landscape) and (max-height: 600px){
     body {
+        position: relative;
         min-height: 100lvh;
     }
 }
