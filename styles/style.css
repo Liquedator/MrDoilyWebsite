@@ -393,7 +393,7 @@ a {
 
 /*about.html*/
 .aboutDesc {
-    font-size: 1.2vw;
+    font-size: min(1.2vw, 3vh);
     text-align: center;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -693,5 +693,14 @@ button {
     body {
         position: relative;
         min-height: 100lvh;
+    }
+
+    .aboutDesc {
+        padding-top: 5vh;
+        margin-top: 0;
+    }
+
+    .aboutPics {
+        width: min(50vw, 60vh);
     }
 }
