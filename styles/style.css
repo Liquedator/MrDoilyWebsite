@@ -699,8 +699,4 @@ button {
         padding-top: 5vh;
         margin-top: 0;
     }
-
-    .aboutPics {
-        width: min(50vw, 60vh);
-    }
 }
