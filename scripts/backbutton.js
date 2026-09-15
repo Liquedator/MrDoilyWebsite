@@ -1,5 +1,5 @@
 document.getElementById("goBackButton").addEventListener("click", () => {
-    if (window.history.length > 1) {
+    if (document.referrer) {
         window.history.back();
     } else {
         window.location.replace("/index.html");
