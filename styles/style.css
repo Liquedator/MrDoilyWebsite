@@ -154,7 +154,7 @@ b {
 /*404.html*/
 #image404 {
     position: fixed;
-    width: clamp(20vmin, 30vmax, 30vmax);
+    width: clamp(25vmin, 35vmax, 35vmax);
     height: auto;
     left: 50%;
     top: 47%;
