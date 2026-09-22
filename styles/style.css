@@ -299,30 +299,31 @@ b {
     color: white;
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
+    padding: 0.6vw 0.6vw;
     overflow: hidden;
-    position: relative; 
+    position: relative;
     height: 2vw;
     display: flex;
     align-items: center;
+
+    container-type: inline-size;
 }
 
 .posterCaption span {
     display: inline-block;
     white-space: nowrap;
-    top: 50%;
-    transform: translateX(var(--offset));
-    animation: scrollText 4s linear infinite;
-    animation-direction: alternate;
-}
+    flex-shrink: 0;
 
+    animation: scrollText 4s linear infinite alternate;
+}
 
 @keyframes scrollText {
     0%, 20% {
-        transform: translateX(var(--offset));
+        transform: translateX(0);
     }
 
     80%, 100% {
-        transform: translateX(calc(-1 * var(--text-width)));
+        transform: translateX(min(0px, calc(100cqw - 100%)));
     }
 }
 
