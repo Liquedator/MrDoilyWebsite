@@ -297,15 +297,12 @@ b {
     margin-top: 0.5vw;
     background-color: black;
     color: white;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
-    padding: 0.6vw 0.6vw;
+    padding: 0.4vw 0.75vw;
     overflow: hidden;
     position: relative;
     height: 2vw;
     display: flex;
     align-items: center;
-
     container-type: inline-size;
 }
 
