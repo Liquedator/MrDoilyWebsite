@@ -69,7 +69,7 @@ async function populatePosters() {
         gigItem.appendChild(picture);
 
         if (gigDate >= today) {
-            upcomingContainer.appendChild(gigItem);
+            upcomingContainer.prepend(gigItem);
             const caption = document.createElement("div");
             caption.classList.add("posterCaption");
 
