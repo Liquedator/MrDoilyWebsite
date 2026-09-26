@@ -1,5 +1,5 @@
 async function populateSlideshow() {
-  const response = await fetch("./aboutpics.json");
+  const response = await fetch("./data/aboutpics.json");
   const jsonData = await response.json();
 
   for (const photo of jsonData) {

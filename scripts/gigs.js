@@ -20,7 +20,7 @@ function updateScrollDistance() {
 }
 
 async function populatePosters() {
-    const response = await fetch("./gigposters.json");
+    const response = await fetch("./data/gigposters.json");
     const jsonData = await response.json();
 
     const upcomingContainer = document.getElementById("upcomingGigsContainer");
