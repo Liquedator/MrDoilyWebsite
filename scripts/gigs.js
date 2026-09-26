@@ -82,6 +82,32 @@ async function populatePosters() {
             pastContainer.appendChild(gigItem);
         }
     }
+
+    if (upcomingContainer.children.length < 1) {
+        const gigItem = document.createElement("div");
+        gigItem.classList.add("gigItem"); 
+
+        const picture = document.createElement("picture");
+
+        const source = document.createElement("source");
+        source.type = "image/webp";
+        source.srcset = "./img/posters/NoGigs.webp";
+
+        const img = document.createElement("img");
+        img.src = "./img/posters/NoGigs.jpg";
+        img.alt = "No upcoming gigs poster";
+        img.id = "NoGigsPoster";
+        img.classList.add("gigsPoster");
+        img.classList.add("headliner");
+
+        picture.appendChild(source);
+        picture.appendChild(img);
+        gigItem.appendChild(picture);
+
+        for (let i = 0; i < 2; i++) {
+            upcomingContainer.appendChild(gigItem.cloneNode(true));
+        }
+    }
 }
 
 populatePosters();
