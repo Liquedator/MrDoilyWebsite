@@ -1,3 +1,26 @@
+async function populateSlideshow() {
+  const response = await fetch("./aboutpics.json");
+  const jsonData = await response.json();
+
+  for (const photo of jsonData) {
+    const picture = document.createElement("picture");
+    picture.classList.add("slide");
+
+    const source = document.createElement("source");
+    source.type = "image/webp";
+    source.srcset = photo.imgLink + ".webp";
+
+    const img = document.createElement("img");
+    img.src = photo.imgLink + ".jpg";
+    img.alt = photo.alt;
+
+    picture.appendChild(source);
+    picture.appendChild(img);
+
+    track.appendChild(picture);
+  }
+}
+
 function getSlideWidth() {
   return document.querySelector('.slide').getBoundingClientRect().width;
 }
@@ -52,58 +75,67 @@ function resetAutoSlide() {
 }
 
 const track = document.querySelector('.track');
-let slidesArray = Array.from(track.children);
-slidesArray = shuffle(slidesArray);
-track.innerHTML = '';
-slidesArray.forEach(slide => track.appendChild(slide));
-
-let slides = document.querySelectorAll('.slide');
-
+let slides;
 let index = 1;
 let isAnimating = false;
-
 let autoSlideInterval;
+
 const AUTO_DELAY = 5000;
-const firstClone = slides[0].cloneNode(true);
-const lastClone = slides[slides.length - 1].cloneNode(true);
 
-track.appendChild(firstClone);
-track.insertBefore(lastClone, track.firstChild);
+async function initialiseSlideshow() {
+  await populateSlideshow();
+  
+  let slidesArray = Array.from(track.children);
+  slidesArray = shuffle(slidesArray);
 
-slides = document.querySelectorAll('.slide');
+  track.innerHTML = '';
+  slidesArray.forEach(slide => track.appendChild(slide));
 
-track.style.transform = `translateX(-${getSlideWidth() * index}px)`;
+  slides = document.querySelectorAll('.slide');
 
-window.addEventListener('resize', () => {
-  track.style.transition = 'none';
+  const firstClone = slides[0].cloneNode(true);
+  const lastClone = slides[slides.length - 1].cloneNode(true);
+
+  track.appendChild(firstClone);
+  track.insertBefore(lastClone, track.firstChild);
+
+  slides = document.querySelectorAll('.slide');
+
   track.style.transform = `translateX(-${getSlideWidth() * index}px)`;
-});
 
-document.querySelector('.next').addEventListener('click', () => {
-  goToNextSlide();
-  resetAutoSlide();
-});
-
-document.querySelector('.prev').addEventListener('click', () => {
-  goToPrevSlide();
-  resetAutoSlide();
-});
-
-track.addEventListener('transitionend', () => {
-  if (index === slides.length - 1) {
+  window.addEventListener('resize', () => {
     track.style.transition = 'none';
-    index = 1;
     track.style.transform = `translateX(-${getSlideWidth() * index}px)`;
-  }
+  });
 
-  if (index === 0) {
-    track.style.transition = 'none';
-    index = slides.length - 2;
-    track.style.transform = `translateX(-${getSlideWidth() * index}px)`;
-  }
-    requestAnimationFrame(() => {
-        isAnimating = false;
-    });
-});
+  document.querySelector('.next').addEventListener('click', () => {
+    goToNextSlide();
+    resetAutoSlide();
+  });
 
-startAutoSlide();
+  document.querySelector('.prev').addEventListener('click', () => {
+    goToPrevSlide();
+    resetAutoSlide();
+  });
+
+  track.addEventListener('transitionend', () => {
+    if (index === slides.length - 1) {
+      track.style.transition = 'none';
+      index = 1;
+      track.style.transform = `translateX(-${getSlideWidth() * index}px)`;
+    }
+
+    if (index === 0) {
+      track.style.transition = 'none';
+      index = slides.length - 2;
+      track.style.transform = `translateX(-${getSlideWidth() * index}px)`;
+    }
+      requestAnimationFrame(() => {
+          isAnimating = false;
+      });
+  });
+
+  startAutoSlide();
+}
+
+initialiseSlideshow();
