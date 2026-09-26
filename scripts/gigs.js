@@ -104,7 +104,12 @@ async function populatePosters() {
         picture.appendChild(img);
         gigItem.appendChild(picture);
 
-        for (let i = 0; i < 2; i++) {
+        let numPosters = 4;
+        if (window.innerWidth <= 600) {
+            numPosters = 2;
+        }
+
+        for (let i = 0; i < numPosters; i++) {
             upcomingContainer.appendChild(gigItem.cloneNode(true));
         }
     }
