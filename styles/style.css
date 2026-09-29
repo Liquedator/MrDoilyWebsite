@@ -487,8 +487,9 @@ button {
     }
 
     #socials {
+        top: auto;
         left: auto;
-        top: 27vh;
+        bottom: 53vh;
         right: 5vw;
         transform: none;
     }
@@ -499,8 +500,9 @@ button {
     }
 
     #gigs {
+        top: auto;
         right: auto;
-        top: 27vh;
+        bottom: 53vh;
         left: 5vw;
         transform: none;
     }
