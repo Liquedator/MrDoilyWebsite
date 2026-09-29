@@ -472,7 +472,7 @@ button {
     #centerButton {
         position: absolute;
         left: 50%;
-        top: 15%;
+        top: 17%;
         transform: translate(-50%, -50%);
         width: clamp(25vmin, 27vmax, 27vmax);
         height: auto;
@@ -487,9 +487,8 @@ button {
     }
 
     #socials {
-        top: auto;
+        top: 27vh;
         left: auto;
-        bottom: 47vh;
         right: 5vw;
         transform: none;
     }
@@ -500,9 +499,8 @@ button {
     }
 
     #gigs {
-        top: auto;
+        top: 27vh;
         right: auto;
-        bottom: 47vh;
         left: 5vw;
         transform: none;
     }
@@ -525,28 +523,29 @@ button {
     }
 
     #music {
-        top: auto;
-        bottom: 27vh;
+        right: auto;    
+        top: calc((27vh + (100vh - 7vh)) / 2);
+        bottom: auto;
         left: 5vw;
-        transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(1) translateY(-50%);
     }
 
     #music:hover {
         filter: brightness(0.8);
-        transform: rotate(-1deg) scale(1.05);
+        transform: rotate(-1deg) scale(1.05) translateY(-50%);
     }
 
     #merch {
         left: auto;
-        top: auto;
-        bottom: 27vh;
+        top: calc((27vh + (100vh - 7vh)) / 2);
+        bottom: auto;
         right: 5vw;
-        transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(1) translateY(-50%);
     }
 
     #merch:hover {
         filter: brightness(0.8);
-        transform: rotate(-1deg) scale(1.05);
+        transform: rotate(-1deg) scale(1.05) translateY(-50%);
     }
 
 
