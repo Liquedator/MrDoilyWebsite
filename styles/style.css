@@ -480,14 +480,14 @@ button {
 
     .homepageBtn {
         position: absolute;
-        width: clamp(15vmin, 20vmax, 20vmax);
+        width: clamp(15vmin, 50vw, 20vmax);
         height: auto;
         transition: transform 180ms ease;
         transform: rotate(0deg) scale(1);   
     }
 
     #socials {
-        top: 27vh;
+        top: 27dvh;
         left: auto;
         right: 5vw;
         transform: none;
@@ -499,7 +499,7 @@ button {
     }
 
     #gigs {
-        top: 27vh;
+        top: 27dvh;
         right: auto;
         left: 5vw;
         transform: none;
@@ -512,40 +512,40 @@ button {
 
     #about {
         top: auto;
-        bottom: 7vh;
+        bottom: 7dvh;
         left: 5vw;
     }
 
     #contact {
         top: auto;
-        bottom: 7vh;
+        bottom: 7dvh;
         right: 5vw;
     }
 
     #music {
         right: auto;    
-        top: calc((27vh + (100vh - 7vh)) / 2);
+        top: 60dvh;
         bottom: auto;
         left: 5vw;
-        transform: rotate(0deg) scale(1) translateY(-50%);
+        transform: translateY(-50%) rotate(0deg) scale(1);
     }
 
     #music:hover {
         filter: brightness(0.8);
-        transform: rotate(-1deg) scale(1.05) translateY(-50%);
+        transform: translateY(-50%) rotate(-1deg) scale(1.05);
     }
 
     #merch {
         left: auto;
-        top: calc((27vh + (100vh - 7vh)) / 2);
+        top: 60dvh;
         bottom: auto;
         right: 5vw;
-        transform: rotate(0deg) scale(1) translateY(-50%);
+        transform: translateY(-50%) rotate(0deg) scale(1);
     }
 
     #merch:hover {
         filter: brightness(0.8);
-        transform: rotate(-1deg) scale(1.05) translateY(-50%);
+        transform: translateY(-50%) rotate(-1deg) scale(1.05);
     }
 
 
