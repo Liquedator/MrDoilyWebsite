@@ -472,7 +472,7 @@ button {
     #centerButton {
         position: absolute;
         left: 50%;
-        top: 20%;
+        top: 15%;
         transform: translate(-50%, -50%);
         width: clamp(25vmin, 27vmax, 27vmax);
         height: auto;
@@ -511,19 +511,19 @@ button {
 
     #about {
         top: auto;
-        bottom: 3vh;
+        bottom: 7vh;
         left: 5vw;
     }
 
     #contact {
         top: auto;
-        bottom: 3vh;
+        bottom: 7vh;
         right: 5vw;
     }
 
     #music {
         top: auto;
-        bottom: 23vh;
+        bottom: 30vh;
         left: 5vw;
         transform: rotate(0deg) scale(1);
     }
@@ -536,7 +536,7 @@ button {
     #merch {
         left: auto;
         top: auto;
-        bottom: 23vh;
+        bottom: 30vh;
         right: 5vw;
         transform: rotate(0deg) scale(1);
     }
