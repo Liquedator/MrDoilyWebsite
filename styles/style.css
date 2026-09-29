@@ -472,11 +472,12 @@ button {
     #centerButton {
         position: absolute;
         left: 50%;
-        top: 15%;
+        top: 14%;
         transform: translate(-50%, -50%);
         width: clamp(25vmin, 27vmax, 27vmax);
         height: auto;
     }   
+    
     .homepageBtn {
         position: absolute;
         width: clamp(15vmin, 20vmax, 20vmax);
