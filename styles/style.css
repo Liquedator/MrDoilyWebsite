@@ -480,7 +480,7 @@ button {
 
     .homepageBtn {
         position: absolute;
-        width: clamp(15vmin, 50vw, 20vmax);
+        width: clamp(15vmin, 40vw, 20vmax);
         height: auto;
         transition: transform 180ms ease;
         transform: rotate(0deg) scale(1);   
