@@ -466,7 +466,7 @@ button {
     }
 
     .indexPage {
-        height: 90vh;
+        height: 90dvh;
     }
 
     #centerButton {
@@ -487,7 +487,7 @@ button {
 
     #socials {
         left: auto;
-        top: 27dvh;
+        top: 27vh;
         right: 5vw;
         transform: none;
     }
@@ -499,7 +499,7 @@ button {
 
     #gigs {
         right: auto;
-        top: 27dvh;
+        top: 27vh;
         left: 5vw;
         transform: none;
     }
@@ -511,19 +511,19 @@ button {
 
     #about {
         top: auto;
-        bottom: 3dvh;
+        bottom: 3vh;
         left: 5vw;
     }
 
     #contact {
         top: auto;
-        bottom: 3dvh;
+        bottom: 3vh;
         right: 5vw;
     }
 
     #music {
         top: auto;
-        bottom: 23dvh;
+        bottom: 23vh;
         left: 5vw;
         transform: rotate(0deg) scale(1);
     }
@@ -536,7 +536,7 @@ button {
     #merch {
         left: auto;
         top: auto;
-        bottom: 23dvh;
+        bottom: 23vh;
         right: 5vw;
         transform: rotate(0deg) scale(1);
     }
