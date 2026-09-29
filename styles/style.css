@@ -487,7 +487,7 @@ button {
 
     #socials {
         left: auto;
-        top: 27vh;
+        top: 27dvh;
         right: 5vw;
         transform: none;
     }
@@ -499,7 +499,7 @@ button {
 
     #gigs {
         right: auto;
-        top: 27vh;
+        top: 27dvh;
         left: 5vw;
         transform: none;
     }
@@ -511,34 +511,34 @@ button {
 
     #about {
         top: auto;
-        bottom: 3vh;
+        bottom: 3dvh;
         left: 5vw;
     }
 
     #contact {
         top: auto;
-        bottom: 3vh;
+        bottom: 3dvh;
         right: 5vw;
     }
 
     #music {
         top: auto;
-        bottom: 23vh;
+        bottom: 23dvh;
         left: 5vw;
-        transform: rotate(0deg) scale(1);
-    }
-
-    #merch {
-        left: auto;
-        top: auto;
-        bottom: 23vh;
-        right: 5vw;
         transform: rotate(0deg) scale(1);
     }
 
     #music:hover {
         filter: brightness(0.8);
         transform: rotate(-1deg) scale(1.05);
+    }
+
+    #merch {
+        left: auto;
+        top: auto;
+        bottom: 23dvh;
+        right: 5vw;
+        transform: rotate(0deg) scale(1);
     }
 
     #merch:hover {
