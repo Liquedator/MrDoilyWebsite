@@ -26,8 +26,8 @@
     {
         "imgLink": "../img/posters/20261011AnyoneCanPlayGuitar",
         "fallbackExt": "jpg",
-        "external": true,
-        "externalLink": "https://www.eventbrite.com.au/e/four-times-the-charm-debut-performance-tickets-2002401455657",
+        "external": false,
+        "externalLink": "",
         "alt": "Anyone Can Play Guitar 11/10/2026 Poster",
         "id": "11102026",
         "date": "2026-10-11",
