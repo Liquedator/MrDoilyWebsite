@@ -1,5 +1,6 @@
 [
     {
+        "visible": true,
         "imgLink": "../img/posters/20261121EPLaunch",
         "fallbackExt": "jpg",
         "external": true,
@@ -12,6 +13,20 @@
     },
 
     {
+        "visible": false,
+        "imgLink": "../img/posters/20261120Infuse",
+        "fallbackExt": "png",
+        "external": true,
+        "externalLink": "https://moshtix.com.au/v2/event/infuse-smith-st-hotel/201104",
+        "alt": "Infuse 20/11/2026 Poster",
+        "id": "20112026",
+        "date": "2026-11-20",
+        "caption": "Supporting Infuse at the Smith St hotel on November 20th!",
+        "headliner": false
+    },
+
+    {
+        "visible": true,
         "imgLink": "../img/posters/20261106Goonbag",
         "fallbackExt": "jpg",
         "external": true,
@@ -24,6 +39,20 @@
     },
 
     {
+        "visible": true,
+        "imgLink": "../img/posters/20261030HalloweenFundraiser",
+        "fallbackExt": "jpg",
+        "external": true,
+        "externalLink": "https://www.trybooking.com/au/event/1649089",
+        "alt": "Speak Beyond x Bloodlust Halloween Fundraiser 30/10/2026 Poster",
+        "id": "30102026",
+        "date": "2026-10-30",
+        "caption": "Playing at the Halloween fundraiser for the films Speak Beyond and Bloodlust!",
+        "headliner": false
+    },
+
+    {
+        "visible": true,
         "imgLink": "../img/posters/20261011AnyoneCanPlayGuitar",
         "fallbackExt": "jpg",
         "external": false,
@@ -36,6 +65,7 @@
     },
     
     {
+        "visible": true,
         "imgLink": "../img/posters/20260924KickonRes",
         "fallbackExt": "jpg",   
         "external": true,
@@ -48,6 +78,7 @@
     },
     
     {
+        "visible": true,
         "imgLink": "../img/posters/20260823BergyBandroom",
         "fallbackExt": "png",
         "external": true,
@@ -60,6 +91,7 @@
     },
 
     {
+        "visible": true,
         "imgLink": "../img/posters/20260729DisplacedRecords",
         "fallbackExt": "jpg",
         "external": true,
@@ -72,6 +104,7 @@
     },
 
     {
+        "visible": true,
         "imgLink": "../img/posters/20260710LaceDress",
         "fallbackExt": "jpg",
         "external": true,
@@ -84,6 +117,7 @@
     },
     
     {
+        "visible": true,
         "imgLink": "../img/posters/20260701JamSandwiches",
         "fallbackExt": "png",
         "external": true,
@@ -96,6 +130,7 @@
     },
 
     {
+        "visible": true,
         "imgLink": "../img/posters/20260620TheTakes",
         "fallbackExt": "png",
         "external": true,
@@ -108,6 +143,7 @@
     },
 
     {
+        "visible": true,
         "imgLink": "../img/posters/20260612WorkersClub",
         "fallbackExt": "jpg",
         "external": true,
@@ -120,6 +156,7 @@
     },
 
     {
+        "visible": true,
         "imgLink": "../img/posters/20260524BrunswickArtistBar",
         "fallbackExt": "png",
         "external": false,
@@ -132,6 +169,7 @@
     },
 
     {
+        "visible": true,
         "imgLink": "../img/posters/20260516BarwonClub",
         "fallbackExt": "png",
         "external": true,
@@ -144,6 +182,7 @@
     },
 
     {
+        "visible": true,
         "imgLink": "../img/posters/20260501KidsBreakGlass",
         "fallbackExt": "png",
         "external": true,
@@ -156,6 +195,7 @@
     },
 
     {
+        "visible": true,
         "imgLink": "../img/posters/20260416BendigoHotel",
         "fallbackExt": "png",
         "external": true,
@@ -167,6 +207,7 @@
         "headliner": true
     },
     {
+        "visible": true,
         "imgLink": "../img/posters/20260315WorkersClub",
         "fallbackExt": "png",
         "external": true,
@@ -179,6 +220,7 @@
     },
 
     {
+        "visible": true,
         "imgLink": "../img/posters/20251013BroadwayBall",
         "fallbackExt": "png",
         "external": true,
@@ -191,6 +233,7 @@
     },
 
     {
+        "visible": true,
         "imgLink": "../img/posters/20250225Southbank",
         "fallbackExt": "png",
         "external": true,
