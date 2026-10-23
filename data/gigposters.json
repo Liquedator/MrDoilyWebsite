@@ -39,7 +39,7 @@
     },
 
     {
-        "visible": true,
+        "visible": false,
         "imgLink": "../img/posters/20261030HalloweenFundraiser",
         "fallbackExt": "jpg",
         "external": true,
