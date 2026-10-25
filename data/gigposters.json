@@ -13,7 +13,7 @@
     },
 
     {
-        "visible": false,
+        "visible": true,
         "imgLink": "../img/posters/20261120Infuse",
         "fallbackExt": "png",
         "external": true,
@@ -39,7 +39,7 @@
     },
 
     {
-        "visible": false,
+        "visible": true,
         "imgLink": "../img/posters/20261030HalloweenFundraiser",
         "fallbackExt": "jpg",
         "external": true,
