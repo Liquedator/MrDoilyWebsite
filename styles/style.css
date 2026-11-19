@@ -644,23 +644,23 @@ button {
         top: 10%;
         left: 10%;
         width: 80vw;
-        min-height: 20vh;
+        min-height: 25vh;
     }
 
     #spotify {
-        top: 35%;
+        top: 40%;
     }
 
     #appleMusic {
-        top: 49%;
+        top: 54%;
     }
 
     #youtubeMusic {
-        top: 63%;
+        top: 68%;
     }
 
     #bandcamp {
-        top: 77%;
+        top: 82%;
     }
 
     .gigsTitle {
