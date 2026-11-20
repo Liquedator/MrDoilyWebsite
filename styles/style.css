@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Poppins';
-  src: url('../fonts/Poppins-Regular.otf') format('otf');
+  src: url('../fonts/Poppins-Complete/Poppins-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
