@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
-
-.coming-soon-regular {
-    font-family: "Coming Soon", cursive;
-    font-weight: 400;
-    font-style: normal;
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    font-family: "Coming Soon", cursive;
-    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
     line-height: 1.45;
 }
 
@@ -382,7 +382,7 @@ a {
     transform: rotate(-1deg) scale(1.05);
 }
 
-#musicVideo {
+#musicEmbed{
     position: absolute;
     left: 9%;
     top: 21%;
@@ -640,7 +640,7 @@ button {
         left: 20%;
     }
     
-    #musicVideo {
+    #musicEmbed {
         top: 10%;
         left: 10%;
         width: 80vw;
