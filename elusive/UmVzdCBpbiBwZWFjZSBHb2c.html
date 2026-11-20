@@ -16,6 +16,17 @@
                 justify-content: center;
                 align-items: center;
             }
+
+            #parkour {
+                aspect-ratio: 16 / 9;
+                width: 50vw;
+            }
+
+            @media (max-width: 600px) {
+                #parkour {
+                    width: 80vw;
+                }
+            }
         </style>
     </head>
     <body>
@@ -27,7 +38,7 @@
                 </picture>
             </a>
         </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/2pFwQiwRbcg?si=TxgRf87RWizUomuj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe id="parkour" src="https://www.youtube.com/embed/2pFwQiwRbcg?si=TxgRf87RWizUomuj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <p class="copyright">© 2026 Kieran Chau. All rights reserved.</p>
         <script src="../scripts/backbutton.js"></script>
     </body>
